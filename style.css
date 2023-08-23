@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 95%);
+}
+main{
+    margin: auto 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.items{
+    border:2px solid;
+    padding: 1rem 2rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+}
+img{
+    width: 2rem;
+    height: 1.4rem;
+}
+.first---container{
+    background-color: hsl(31, 77%, 52%);
+    border-color: hsl(31, 77%, 52%);
+    transform: skew(1deg);
+    transform-origin: left top;
+}
+.second---container{
+    background-color: hsl(184, 100%, 22%);
+    border-color: hsl(184, 100%, 22%);
+}
+.third---container{
+    background-color: hsl(179, 100%, 13%);
+    border-color: hsl(179, 100%, 13%);
+    transform: skew(-1deg);
+    transform-origin: right top;
+}
+.items p{
+    Font-size: 15px;
+}
+.button{
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: white;
+    padding: .3rem 0;
+    width: 65%;
+    border-radius: 25px;
+    text-align: center;
+}
+.first---container .button{
+    color: hsl(31, 77%, 52%);
+}
+.second---container .button{
+    color: hsl(184, 100%, 22%);
+}
+.third---container .button{
+    color: hsl(179, 100%, 13%);
+}
