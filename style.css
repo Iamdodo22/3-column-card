@@ -12,6 +12,12 @@ body{
     height: 100vh;
     overflow: hidden;
     background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+@media (max-width:375px) {
+    body{
+       font-size: 12px; 
+    }
 }
 main{
     margin: auto 20%;
@@ -20,23 +26,32 @@ main{
     justify-content: center;
     align-items: center;
 }
+@media (max-width:375px) {
+    main{
+        flex-direction: column;
+        gap: 0;
+    }
+}
 .items{
     border:2px solid;
     padding: 1rem 2rem 1rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
     color: white;
 }
+@media (max-width:375px) {
+    .items{
+        gap:.5rem ;
+    }
+}
 img{
-    width: 2rem;
-    height: 1.4rem;
+    width: 3rem;
+    height: 2rem;
 }
 .first---container{
     background-color: hsl(31, 77%, 52%);
     border-color: hsl(31, 77%, 52%);
-    transform: skew(1deg);
-    transform-origin: left top;
 }
 .second---container{
     background-color: hsl(184, 100%, 22%);
@@ -45,11 +60,17 @@ img{
 .third---container{
     background-color: hsl(179, 100%, 13%);
     border-color: hsl(179, 100%, 13%);
-    transform: skew(-1deg);
-    transform-origin: right top;
 }
 .items p{
-    Font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+@media (max-width:375px) {
+    .items p{
+        font-size: 10px;
+    }
+}
+h1{
+    font-family: 'Lexend Deca', sans-serif;
 }
 .button{
     text-decoration: none;
